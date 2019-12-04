@@ -1,111 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-	<title>pelo negro</title>
+
+	<title>Ignition's Website</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+
 </head>
+
 <body>
-	<div id="divBtn">   
-        <button id="clickButton"> Clica </button>
-    </div>
-     <footer id="pe">
-        <a href="https://www.youtube.com/channel/UCP8lKslC4SDdn2GndQKG6Ew?view_as=subscriber"> Pior canal do Youtube </a>
-    </footer>  
-    <script>
-        var timesclosed = 0
-        var clickButton = document.querySelector("#clickButton")
-            
-        clickButton.addEventListener('click', fodase)
-        function fodase() {
-            alert("pele não é negro")
-        }    
-    </script>
+	
+	<header id="cabecalho">
+		<nav role="navigation">
+			<div id="menuToggle">
+			<input type="checkbox" />
+			<span></span>
+			<span></span>
+			<span></span>
+			   <ul id="menu">
+					<!-- <a href="#"><li>Home</li></a>
+					<a href="#"><li>Sobre</li></a>
+					<a href="#"><li>Info</li></a>
+					<a href="#"><li>Contato</li></a> -->					
+				</ul>
+				</div>
+			</nav> 
+			<header id="cabecalho">
+				<h1>Ignition's Website</h1>
+				<h2>Seja bem-vindo </h2>
+				<h3>Nada por enquanto!</h3>
+	</header>
+
+	<img src="_imagens/pele.png" class="pele">
+
+	<footer id="footer">
+        <a href="https://www.instagram.com/itsigor.ms/" target="_blank"> Todos direitos reservados © Ignition 2019 </a>
+	</footer>
+ 
 </body>
-<style type="text/css">
-		body {
-			    margin: 0;
-			    width: 100%;
-			    height: 100vh;
-			    font-family: "Exo", sans-serif;
-			    color: #fff;
-			    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-			    background-size: 400% 400%;
-			    animation: gradientBG 5s ease infinite;
-			}
-			@keyframes gradientBG {
-			    0% {
-			        background-position: 0% 50%;
-			    }
-			    50% {
-			        background-position: 100% 50%;
-			    }
-			    100% {
-			        background-position: 0% 50%;
-			    }
-			}
-			.container {
-			    width: 100%;
-			    position: absolute;
-			    top: 35%;
-			    text-align: center;
-			}
-			h1 {
-			    font-weight: 300;
-			}
-			h3 {
-			    color: #eee;
-			    font-weight: 100;
-			}
-			h5 {
-			    color:#eee;
-			    font-weight:300;
-			}
-			a,
-			a:hover {
-			    text-decoration: none;
-			    color: #ddd;
-			}
-	#clickButton {
-	    background-color: white;
-	    color: black;
-	    height: 200px;
-	    width: 600px;
-	    border: solid transparent;
-	    border-radius: 160px;
-	    font-size: 72px;
-	    font-family: 'Roboto', sans-serif;
-	    font-weight: bold;
-	    box-shadow: .5px .5px 100px black;
-	    cursor: pointer;
-	}
-		#divBtn {
-	    display:flex;
-	    justify-content:center;
-	    align-items:center;
-	    height: 100%;
-	}
-	#pe {   
-	    font-family: 'Roboto', sans-serif;
-	    font-size: 36px;
-	    
-	    position: fixed;
-	    bottom: 0;
-	    background: white;
 
-	    text-align: center;
-	    line-height: 50px;
-
-	    width: 100%;
-	    height: 50px;
-	}
-
-	#pe a {
-	    color: black;
-	    text-decoration: none;
-	}
-
-	#pe a:hover {
-	    color: rgb(0, 60, 255);
-	    text-decoration: none;
-	}
-</style>
 </html>

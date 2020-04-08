@@ -47,7 +47,7 @@ footer {
 input {
     border: 1px solid lightgray;
     color: white;
-    background-color: #262626;
+    background-color: #111;
 }
 
 input:focus,
@@ -68,6 +68,8 @@ input:hover {
 .light {
     opacity: 1;
 }
+
+
 
 
 

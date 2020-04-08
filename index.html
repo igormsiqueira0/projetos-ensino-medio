@@ -1,23 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=utf-8 />
+    <link rel="stylesheet" href="style.css">
     <title>Mamma Mia's Bolas</title>
     <link id="pagestyle" rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="logotransp.ico" type="image/x-icon" />
+    <link rel="icon" href="logotransp.ico">
+    <script type="text/javascript">
+        function swapStyleSheet(sheet) {
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+        }
+    </script>
 </head>
 <body>
     <header>
         <img src="logotransp.png" id="logohead">
         <div class="header-right">
-            <a href="#home"><img src="home.ico" id="homeicon">INICIO</a>
-            <a href="#contact"><img src="contact.ico" id="contacticon">CONTATO</a>
-            <a href="#about"><img src="about.ico" id="abouticon">SOBRE</a>
+            <a href="#home" id="a-inicio"><img src="home.ico" id="homeicon">INICIO</a>
+            <a href="#contact" id="a-inicio"><img src="contact.ico" id="contacticon">CONTATO</a>
+            <a href="#about" id="a-inicio"><img src="about.ico" id="abouticon">SOBRE</a>
         </div>
     </header>
-    <div id="fundo">
-    <img src="logotransp.png" id="imgfundo">
-    </div>
+
+
+
+    <footer>
+        <div id="footerinside">
+            <h1>LINKS</h1>
+            <ul id="social">
+                <li id="socgc"><a href="https://gamersclub.com.br/time/159799" target="_blank"><img src="gc.ico" class="ico gc"></a></li>
+                <li id="socyt"><a href="https://www.youtube.com/channel/UC_gV70G_Y51LTa3qhu8KiEA" target="_blank"><img src="yt.ico" class="ico yt"></a></li>
+                <li id="soctw"><a href="https://twitter.com/mibr" target="_blank"><img src="tw.ico" class="ico tw"></a></li>
+            </ul>
+
+            <div id="switchholder">
+                <button onclick="swapStyleSheet('dark.css')" class="btnS dark"><img src="moon.svg"></button>    
+                <button onclick="swapStyleSheet('style.css')" class="btnS light"><img src="sun.svg"></button>            
+            </div>
+
+            <form action="">
+                <h3>RECEBA TODAS NOVIDADES</h3>
+                <input type="email" name="txtMail" id="txtMail" placeholder="Digite seu e-mail" required/><button id="submit" type="submit"><img src="rightarrow.png" id="submitarrow"></button>
+            </form>
+
+            <div id="footerbottom">
+            <h2>© 2020 Mamma Mia's Bolas. Todos os direitos reservados.</h2>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

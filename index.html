@@ -40,7 +40,8 @@
 
             <form action="">
                 <h3>RECEBA TODAS NOVIDADES</h3>
-                <input type="email" name="txtMail" id="txtMail" placeholder="Digite seu e-mail" required/><button id="submit" type="submit"><img src="rightarrow.png" id="submitarrow"></button>
+                    <input type="text" name="txtMail" class="inputText" placeholder="Digite seu E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+                    <button id="submit" type="submit"><img src="rightarrow.png" id="submitarrow"></button>
             </form>
 
             <div id="footerbottom">
@@ -48,6 +49,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+html, body {
+    background-color: #191919;
+}
+
+header {
+    background-color: #262626;
+    border-bottom: 3px solid black;
+}
+
+/* Footer */
+
+footer {
+    border-top: 3px solid black;
+}
+
+/* Input */
+
+input {
+    border: 1px solid lightgray;
+    color: white;
+    background-color: #262626;
+}
+
+input:focus,
+    input:active {
+        border: 1px solid lightgray;
+    }
+
+input:hover {
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+/* Dark Mode */
+
+.dark {
+    opacity: 0;
+}
+
+.light {
+    opacity: 1;
+}
+
+
+
+

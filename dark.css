@@ -5,14 +5,24 @@ html, body {
     color: white;
 }
 
+/* Header */
+
 header {
     background-color: #262626;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid darkgray;
 }
 
 .header-right a {
-    color: white;
+    color: #fafafa;
+    border-left: 1px solid #fafafa;
 }
+
+.header-right a:hover {
+    border-bottom: 2px solid #fafafa;
+    background-color: #323232;
+}
+
+/* Icones */
 
 #homeicon {
     filter: invert(0%);
@@ -58,3 +68,7 @@ input:hover {
 .light {
     opacity: 1;
 }
+
+
+
+

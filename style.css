@@ -6,6 +6,7 @@ html, body {
     font: normal 20px Helvetica, sans-serif;
     background-color: white;
     overflow-x: hidden;
+    transition: background-color .2s;
 }
 
 
@@ -152,7 +153,7 @@ li {
 
         input {
             width: 272px;
-            height: 40px;
+            height: 45px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
             border: 1px solid lightgray;
@@ -162,6 +163,8 @@ li {
             margin-bottom: 10px;
             margin-right: 47px;
             transition: .2s;
+            background-color: #111;
+            color: white;
         }
 
         input:focus,
@@ -174,13 +177,13 @@ li {
         }
 
         #submit {
-            margin-top: 3px;
+            margin-top: 0px;
             border: 1px solid black;
             margin-left: -50px;
             margin-right: 10px;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
-            height: 45px;
+            height: 50px;
             width: 50px;
             background: black;
             color: white;
@@ -241,6 +244,32 @@ li {
         .light {
             opacity: 0;
             filter: invert(100%);
+        }
+
+        /* Placeholder Flutuante */
+
+        label {
+            position: absolute;
+            padding-right: 7px;
+            padding-left: 7px;
+            margin-top: 9px;
+            left: 1200px;
+            background-color: #111;
+            font-size: 15px;
+            color: white;
+            transition: .1s;
+        }
+
+        input:focus ~ label,
+        input:valid ~ label {
+            font-size: 12px;
+            margin-top: -12px;
+        }
+
+        /* Selection */
+
+        ::selection {
+            background-color: #959595;
         }
 
 

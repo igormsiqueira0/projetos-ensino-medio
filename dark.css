@@ -10,6 +10,22 @@ header {
     border-bottom: 3px solid black;
 }
 
+header-right a {
+    color: white
+}
+
+#homeicon {
+    filter: invert(100%);
+}
+
+#contacticon {
+    filter: invert(100%);
+}
+
+#abouticon {
+    filter: invert(100%);
+}
+
 /* Footer */
 
 footer {

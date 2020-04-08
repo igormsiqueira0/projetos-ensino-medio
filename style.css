@@ -44,10 +44,10 @@ header {
     border-left: 1px solid black;
     color: black;
     font-weight: bold;
-    padding-left: 14px;
-    padding-right: 14px; 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-left: 11px;
+    padding-right: 11px; 
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-decoration: none;
     transition: color .15s, background-color.15s;
     border-bottom: 1px solid transparent;
@@ -55,7 +55,7 @@ header {
 
 .header-right a:hover {
     background-color: #e3e3e3;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 /* Icones */

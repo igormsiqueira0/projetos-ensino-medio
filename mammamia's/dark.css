@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+html, body {
+    background-color: #191919;
+    color: white;
+}
+
+/* Header */
+
+header {
+    background-color: #262626;
+    border-bottom: 3px solid darkgray;
+}
+
+.header-right a {
+    color: #fafafa;
+    border-left: 1px solid #fafafa;
+}
+
+.header-right a:hover {
+    border-bottom: 2px solid #fafafa;
+    background-color: #323232;
+}
+
+/* Icones */
+
+#homeicon {
+    filter: invert(0%);
+}
+
+#contacticon {
+    filter: invert(100%);
+}
+
+#abouticon {
+    filter: invert(100%);
+}
+
+/* Footer */
+
+footer {
+    border-top: 3px solid black;
+}
+
+/* Input */
+
+input {
+    border: 1px solid lightgray;
+    color: white;
+    background-color: #111;
+}
+
+input:focus,
+    input:active {
+        border: 1px solid lightgray;
+    }
+
+input:hover {
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+/* Dark Mode */
+
+.dark {
+    opacity: 0;
+}
+
+.light {
+    opacity: 1;
+}
+
+
+
+
+
+

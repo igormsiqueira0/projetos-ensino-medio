@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorimetria V2.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calorimetria V2.1</h1>
+    </header>
+
+    <main>
+        
+        <section class="dados">
+
+            <h2>Dados</h2>
+    
+                <div class="input-container">
+    
+                    <form>
+    
+                    <div class="group">      
+                        <input type="number" title="Insira aqui um valor em calorias (cal)" id="q-dado" required>
+                        <span class="bar"></span>
+                        <label>Quantidade de Calor (Q)</label>
+                    </div>
+    
+                    <div class="group">      
+                        <input type="number" title="Insira aqui um valor em gramas (g)" id="m-dado" required>
+                        <span class="bar"></span>
+                        <label>Massa (m)</label>
+                    </div>
+    
+                    <div class="group">      
+                        <input type="number" title="Insira aqui um valor em calorias por grama por grau celsius (cal/gºC)" id="c-dado" required>
+                        <span class="bar"></span>
+                        <label>Calor Específico (c)</label>
+                    </div>
+    
+                    <div class="group">      
+                        <input type="number" title="Insira aqui um valor em calorias por segundo ou calorias por grau celsius (cal/s ou cal/ºC)" id="c2-dado" required>
+                        <span class="bar"></span>
+                        <label>Capacidade térmica (C)</label>
+                    </div>
+    
+                    <div class="group">      
+                        <input type="number" title="Insira aqui um valor em grau celsius (ºC)" id="t-dado" required>
+                        <span class="bar"></span>
+                        <label>Variação de Temperatura (ΔT)</label>
+                    </div>
+    
+                    <div class="group">      
+                        <input type="number" title="Insira aqui um valor em calorias (cal)" id="l-dado" required>
+                        <span class="bar"></span>
+                        <label>Calor de troca de estado (L)</label>
+                    </div>
+    
+                    <h2>Conversão</h2>
+                    <h3>* Preencha somente um dos campos</h3>
+    
+                    <div class="group">      
+                        <input type="text" title="Insira aqui um valor em calorias (cal)" id="cal-dado" required style="margin-top: 35px;">
+                        <span class="bar"></span>
+                        <label>Calorias (cal)</label>
+                    </div>
+    
+                    <div class="group">      
+                        <input type="text" title="Insira aqui um valor em joules (J)" id="j-dado" required>
+                        <span class="bar"></span>
+                        <label>Joules (j)</label>
+                    </div>
+    
+                </div>
+    
+                </form>
+    
+                <div id="botoes">        
+                    <button type="button" onclick="reset()" id="limpar" class="action-button shadow animate red">Limpar</button>
+                    <button type="button" onclick="calc()" class="action-button shadow animate blue">Calcular</button>
+                </div>    
+    
+        </section>
+
+        <section class="resultados">
+
+            <h2>Resultados</h2>
+
+            <hr style="border-bottom: 1px solid black;"> <!-- Calor sensível ---------------------------------------------------------- -->
+
+            <form>
+
+            <h4>Calor sensível</h4>
+            <div class="calorsens">
+                <div class="grupo">
+                    <h5>Q</h5>
+                    <input type="number" id="q-cs" readonly>
+                </div>
+
+                <label>=</label>
+
+                <div class="grupo">
+                    <h5>m</h5>
+                    <input type="number" id="m-cs" readonly>
+                </div>
+
+                <label>X</label>
+
+                <div class="grupo">
+                    <h5>c</h5>
+                    <input type="number" id="c-cs" readonly>
+                </div>
+
+                <label>X</label>
+
+                <div class="grupo">
+                    <h5>ΔT</h5>
+                    <input type="number" id="t-cs" style="margin-bottom: 0;" readonly>
+                </div>
+
+            </div>
+            
+            <hr><!-- Capacidade térmica ---------------------------------------------------------- -->
+            
+            <h4>Capacidade térmica</h4>
+            <div class="capter">
+                <div class="grupo">
+                    <h5>c</h5>
+                    <input type="number" id="c-ct" readonly>
+                </div>
+
+                <label>=</label>
+
+                <div class="grupo">
+                    <h5>C</h5>
+                    <input type="number" id="c2-ct" readonly>
+                </div>
+
+                <label>/</label>
+
+                <div class="grupo">
+                    <h5>m</h5>
+                    <input type="number" id="m-ct" readonly>
+                </div>
+            </div>
+
+            <div class="capter">
+
+                <div class="grupo">
+                    <h5>C</h5>
+                    <input type="number" id="c2-ct2" readonly>
+                </div>
+
+                <label>=</label>
+
+                <div class="grupo">
+                    <h5>Q</h5>
+                    <input type="number" id="q-ct" readonly>
+                </div>
+
+                <label>/</label>
+
+                <div class="grupo">
+                    <h5>ΔT</h5>
+                    <input type="number" id="t-ct" readonly>
+                </div>
+
+            </div>
+
+            <hr> <!-- Calor latente ------------------------------------------------------------------------ -->
+
+            <h4>Calor latente</h4>
+                <div id="latente">
+                    <div class="grupo">
+                        <h5>Q</h5>
+                        <input type="number" id="q-cl" readonly>
+                </div>
+
+                <label>=</label>
+
+                    <div class="grupo">
+                        <h5>m</h5>
+                        <input type="number" id="m-cl" readonly>
+                    </div>
+
+                <label>X</label>
+
+                    <div class="grupo">
+                        <h5>L</h5>
+                        <input type="number" id="l-cl" readonly>
+                    </div>
+                </div>
+
+            <hr> <!-- Potência ---------------------------------------------------------- -->
+            
+            <h4>Potência</h4>
+            <div id="conversor">
+                <div class="grupo">
+                    <h5>cal</h5>
+                    <input type="number" id="cal" placeholder="X" readonly>
+                </div>
+
+                <label>X</label>
+
+                <div class="grupo">
+                    <input type="number" value="4.2" id="input-potencia" readonly>
+                </div>
+
+                <label>=</label>
+
+                <div class="grupo">
+                    <h5>J</h5>
+                    <input type="number" id="j" placeholder="X" readonly>
+                </div>
+            </div>
+            </form>
+        </section>
+
+    </main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

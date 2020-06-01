@@ -5,6 +5,10 @@ html, body {
     color: white;
 }
 
+.content {
+    background-color: #858585;
+}
+
 /* Header */
 
 header {

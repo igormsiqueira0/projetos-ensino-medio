@@ -283,7 +283,7 @@ li {
         align-items: center;
     }
 
-    #teste {
+    .content {
         background-color: black;
         height: 900px;
     }
@@ -294,7 +294,7 @@ li {
         width: 100%
     }
 
-    .sticky + #teste {
+    .sticky + .content {
         padding-top: 102px;
     }
 

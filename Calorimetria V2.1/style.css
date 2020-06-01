@@ -218,6 +218,7 @@ h5 {
 
 hr {
     margin: 20px 15px 0px 0px;
+    width: 100%;
 }
 
 @media (max-width: 1900px) {

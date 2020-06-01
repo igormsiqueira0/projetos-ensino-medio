@@ -8,6 +8,10 @@ html, body {
     transition: background-color .2s;
 }
 
+.content {
+    background-color: white;
+    height: 1900px;
+}
 
 /* Header */
 
@@ -281,11 +285,6 @@ li {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .content {
-        background-color: white;
-        height: 1900px;
     }
 
     .sticky {

@@ -31,7 +31,7 @@ header {
 /* Section - Dados -------------------------------------------------------------------------------------------------------------------------------------- */
 
 .dados {
-    height: 854px;
+    height: 90vh;
     border-right: 1px solid black;
     text-align: center;
     width: 20%;

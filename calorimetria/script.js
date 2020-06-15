@@ -64,7 +64,7 @@ async function calc () {
                 }
 
                 if(t == "") {
-                    var answer = (q - m) / c;
+                    var answer = q / (m * c);
                     document.getElementById('t-cs').value = answer;
                     document.getElementById('t-cs').style.color = "#f00";
                     document.getElementById('t-cs').classList.add('transc');

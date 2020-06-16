@@ -31,7 +31,7 @@ header {
 /* Section - Dados -------------------------------------------------------------------------------------------------------------------------------------- */
 
 .dados {
-    height: 90vh;
+    height: 854px;
     border-right: 1px solid black;
     text-align: center;
     width: 20%;
@@ -222,9 +222,15 @@ hr {
     width: 100%;
 }
 
+@media (max-height: 900px) {
+    html, body {
+        overflow-y: visible;
+    }
+}
+
 @media (max-width: 1900px) {
     html, body {
-        overflow: visible;
+        overflow-x: visible;
     }
     
     .dados {

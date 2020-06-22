@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondulatória</title>
+    <link rel="icon" href="imgs/ico.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">   
+</head>
+<body>
+
+    <header>
+
+        <div class="home">
+            <a href="https://ignition777.me"><img src="imgs/home.ico" class="icone"></a>
+        </div>
+
+        <div class="titulo">
+            <h1>Ondulatória</h1>
+        </div>
+
+        <div class="about">
+            <a href="#"><img src="imgs/about.ico" class="icone"></a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="dados">
+
+            <h2>Dados</h2>
+
+            <div class="group">      
+                <input type="text" title="Insira aqui um valor em segundos (s)" id="t-dado" required>
+                <span class="bar"></span>
+                <label>Período (T)</label>
+            </div>
+
+            <div class="group">      
+                <input type="text" title="Insira aqui um valor em hertz (Hz)" id="f-dado" required>
+                <span class="bar"></span>
+                <label>Frequência (f)</label>
+            </div>
+
+            <div class="group">      
+                <input type="text" title="Insira aqui um valor de velocidade" id="v-dado" required>
+                <span class="bar"></span>
+                <label>Velocidade (v)</label>
+            </div>
+
+            <div class="group">      
+                <input type="text" title="Insira aqui um valor de tamanho" id="lambda-dado" required>
+                <span class="bar"></span>
+                <label>Comprimento da onda (λ)</label>
+            </div>
+
+            <div class="botoes">        
+                <button type="button" onclick="reset()" id="limpar" class="action-button shadow animate red">Limpar</button>
+                <button type="button" onclick="calc()" class="action-button shadow animate blue">Calcular</button>
+            </div>    
+
+        </section>
+
+        <section class="resultados">
+
+            <h2>Resultados</h2>
+            
+            <h4>Frequência e período</h4>
+                <div class="freqperi">
+
+                    <div class="grupo">
+                        <p id="tfp1">T ou f</p>
+                        <input type="number" id="tf1" readonly>
+                    </div>
+
+                    <label>=</label>
+
+                    <div class="grupo">
+                        <input type="number" readonly id="um" value="1">
+                    </div>
+
+                    <label>/</label>
+
+                    <div class="grupo">
+                        <p id="tfp2">T ou f</p>
+                        <input type="number" id="tf2" readonly>
+                    </div>
+
+                </div>
+
+            <h4>Velocidade de propagação</h4>
+                <div class="speed">
+
+                    <div class="grupo">
+                        <p>v</p>
+                        <input type="number" id="v" readonly>
+                    </div>
+
+                    <label>=</label>
+
+                    <div class="grupo">
+                        <p>λ</p>
+                        <input type="number" id="lambda" readonly>
+                    </div>
+
+                    <label id="barraoux">/ ou X</label>
+
+                    <div class="grupo">
+                        <p id="tfp3">T ou f</p>
+                        <input type="number" id="tf3" readonly>
+                    </div>
+
+                    <p id="ou">ou</p>
+
+                        <div id="hiddenanws">                            
+
+                            <div class="grupo">
+                                <p id="tfp4">f</p>
+                                <input type="number" id="tf4" readonly>
+                            </div>
+                        </div>
+
+                </div>
+
+        </section>
+
+        <div class="popup"></div>
+
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -21,6 +21,7 @@ main {
     display: flex;
     width: 100%;
     height: 839px;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -155,7 +156,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 80%;
     border: 1px solid black;
     border-left: none;
     padding: 10px;
@@ -240,4 +241,86 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 #hiddenanws::after {
     margin-top: 40px;
     content: 'X';
+}
+
+@media (max-height: 900px) {
+    html, body {
+        overflow-y: visible;
+    }
+}
+
+@media (max-width: 1900px) {
+    html, body {
+        overflow-x: visible;
+    }
+    
+    .dados {
+        width: 20%;
+    }
+
+    .resultados {
+        width: calc(80%);
+    }
+}
+
+@media (max-width: 1900px) {
+    .dados {
+        width: 25%;
+    }
+
+    .resultados {
+        width: calc(75%);
+    }
+}
+
+@media (max-width: 1700px) {
+    .dados {
+        width: 30%;
+    }
+
+    .resultados {
+        width: calc(70%);
+    }
+}
+
+@media (max-width: 1472px) {
+    .dados {
+        width: 40%;
+    }
+
+    .resultados {
+        width: calc(60%);
+    }
+}
+
+@media (max-width: 1350px) {
+    .grupo input {
+        width: 125px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .dados {
+        width: 100%;
+    }
+
+    .resultados {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .grupo input {
+        width: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .action-button {
+        margin: 5px;
+    }
+
+    .dados {
+        width: 100%;
+    }
 }

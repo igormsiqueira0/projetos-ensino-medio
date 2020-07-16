@@ -79,10 +79,6 @@ nav {
     font-size: 24px;
 }
 
-nav .aum {
-    margin-right: 120px;
-}
-
 .skewed-bg{
     background: var(--branco);
     padding: 200px 0;

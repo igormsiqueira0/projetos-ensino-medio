@@ -79,12 +79,6 @@ nav {
     font-size: 24px;
 }
 
-.skewed-bg{
-    background: var(--branco);
-    padding: 200px 0;
-    margin-top: -200px;
-}
-
 /* Intro */
 
 #intro {

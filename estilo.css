@@ -145,7 +145,11 @@ hr {
     display: flex;
     width: 405px;
     height: 405px;
-    background-color: var(--azul-escuro);
+    background: linear-gradient(rgb(53, 54, 70, .9), rgb(53, 54, 70, .9)),
+				url('imgs/fundoSampa.png')
+				center center/
+				cover
+				no-repeat;
     border-radius: 10px;
     justify-content: center;
     flex-wrap: wrap;

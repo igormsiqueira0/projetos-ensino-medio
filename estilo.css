@@ -249,7 +249,7 @@ input {
 @media (max-width: 1400px) {
     
     .tudo {
-        padding: 0px 40px 0px 0px;
+        padding: 0px 40px 0px 40px;
     }
 
     #div1 {
@@ -260,5 +260,13 @@ input {
 @media (max-width: 900px) {
     .imgintro {
         display: none;
+    }
+
+    #projetostitulo {
+        margin-left: 15px;
+    }
+
+    .tudo {
+        padding: 0px 40px 0px 10px;
     }
 }

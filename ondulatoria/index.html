@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ondulatória</title>
     <link rel="icon" href="imgs/ico.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
     <header>
+        <a href="https://ignition777.github.io/projetos-ensino-medio/">
+            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                <path
+                    d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z" />
+            </svg>
+        </a>
 
-        <div class="home">
-            <a href="https://ignition777.me"><img src="imgs/home.ico" class="icone"></a>
-        </div>
+        <h1>Ondulatória</h1>
 
-        <div class="titulo">
-            <h1>Ondulatória</h1>
-        </div>
-
-        <div class="about">
-            <a href="#"><img src="imgs/about.ico" class="icone"></a>
-        </div>
-
+        <a href="https://github.com/Ignition777/projetos-ensino-medio" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="#000000">
+                <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+        </a>
     </header>
 
     <main>
@@ -32,97 +37,98 @@
 
             <h2>Dados</h2>
 
-            <div class="group">      
+            <div class="group">
                 <input type="text" title="Insira aqui um valor em segundos (s)" id="t-dado" required>
                 <span class="bar"></span>
                 <label>Período (T)</label>
             </div>
 
-            <div class="group">      
+            <div class="group">
                 <input type="text" title="Insira aqui um valor em ciclos por segundo (Hertz/Hz)" id="f-dado" required>
                 <span class="bar"></span>
                 <label>Frequência (f)</label>
             </div>
 
-            <div class="group">      
+            <div class="group">
                 <input type="text" title="Insira aqui um valor em metros por segundo (m/s)" id="v-dado" required>
                 <span class="bar"></span>
                 <label>Velocidade (v)</label>
             </div>
 
-            <div class="group">      
+            <div class="group">
                 <input type="text" title="Insira aqui um valor de tamanho (nm/mm/cm/m/km)" id="lambda-dado" required>
                 <span class="bar"></span>
                 <label>Comprimento da onda (λ)</label>
             </div>
 
-            <div class="botoes">        
-                <button type="button" onclick="reset()" id="limpar" class="action-button shadow animate red">Limpar</button>
+            <div class="botoes">
+                <button type="button" onclick="reset()" id="limpar"
+                    class="action-button shadow animate red">Limpar</button>
                 <button type="button" onclick="calc()" class="action-button shadow animate blue">Calcular</button>
-            </div>    
+            </div>
 
         </section>
 
         <section class="resultados">
 
             <h2>Resultados</h2>
-            
+
             <h4>Frequência e período</h4>
-                <div class="freqperi">
+            <div class="freqperi">
 
-                    <div class="grupo">
-                        <p id="tfp1">T ou f</p>
-                        <input type="number" id="tf1" readonly>
-                    </div>
-
-                    <label>=</label>
-
-                    <div class="grupo">
-                        <input type="number" readonly id="um" value="1">
-                    </div>
-
-                    <label>/</label>
-
-                    <div class="grupo">
-                        <p id="tfp2">T ou f</p>
-                        <input type="number" id="tf2" readonly>
-                    </div>
-
+                <div class="grupo">
+                    <p id="tfp1">T ou f</p>
+                    <input type="number" id="tf1" readonly>
                 </div>
+
+                <label>=</label>
+
+                <div class="grupo">
+                    <input type="number" readonly id="um" value="1">
+                </div>
+
+                <label>/</label>
+
+                <div class="grupo">
+                    <p id="tfp2">T ou f</p>
+                    <input type="number" id="tf2" readonly>
+                </div>
+
+            </div>
 
             <h4>Velocidade de propagação</h4>
-                <div class="speed">
+            <div class="speed">
 
-                    <div class="grupo">
-                        <p>v</p>
-                        <input type="number" id="v" readonly>
-                    </div>
-
-                    <label>=</label>
-
-                    <div class="grupo">
-                        <p>λ</p>
-                        <input type="number" id="lambda" readonly>
-                    </div>
-
-                    <label id="barraoux">/ ou X</label>
-
-                    <div class="grupo">
-                        <p id="tfp3">T ou f</p>
-                        <input type="number" id="tf3" readonly>
-                    </div>
-
-                    <p id="ou">ou</p>
-
-                        <div id="hiddenanws">                            
-
-                            <div class="grupo">
-                                <p id="tfp4">f</p>
-                                <input type="number" id="tf4" readonly>
-                            </div>
-                        </div>
-
+                <div class="grupo">
+                    <p>v</p>
+                    <input type="number" id="v" readonly>
                 </div>
+
+                <label>=</label>
+
+                <div class="grupo">
+                    <p>λ</p>
+                    <input type="number" id="lambda" readonly>
+                </div>
+
+                <label id="barraoux">/ ou X</label>
+
+                <div class="grupo">
+                    <p id="tfp3">T ou f</p>
+                    <input type="number" id="tf3" readonly>
+                </div>
+
+                <p id="ou">ou</p>
+
+                <div id="hiddenanws">
+
+                    <div class="grupo">
+                        <p id="tfp4">f</p>
+                        <input type="number" id="tf4" readonly>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 
@@ -130,6 +136,7 @@
 
     </main>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

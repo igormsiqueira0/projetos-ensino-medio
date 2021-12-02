@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Regra de 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
     <div id="nota">
         <p>
             Nota: Para utilizar notação científica: <br>
@@ -20,36 +21,38 @@
     </div>
 
     <div id="corpo">
-        
-        <div id="campos">
-
-            <form name="form">
-                <input type="text" class="campo num1" id="num1" placeholder="Se" title="Digite o primeiro número da Regra de Três." required style="float: left; margin-bottom: 20px;">
-                <input type="text" class="campo num2" id="num2" placeholder="Equivale a" title="Digite o segundo número da Regra de Três." required style="float: right; margin-bottom: 20px;">
-                <br>
-                <input type="text" class="campo num3" id="num3" placeholder="Então" title="Digite o terceiro número da Regra de Três." required style="float: left;">
-                <input type="text" class="campo res" id="res" placeholder="X" title="Aqui sairá o resultado da Regra de Três." readonly required style="float: right;">
-
-                <button type="reset" style="float: left;">Limpar</button>
-
-            </form>
-
-            <button onclick="awns()" style="float: right">Calcular</button>
-            
-            <!-- Switch -->
-            
-            <h2>Inversamente Proporcional</h2>
-            <label class="switch">
-                <input type="checkbox" id="check">
-                <span class="slider round"></span>
-            </label>
-
-        </div>
-
-
-
+        <form name="form">
+            <div class="space-between">
+                <input type="text" class="campo num1" id="num1" placeholder="Se"
+                    title="Digite o primeiro número da Regra de Três." required />
+                <input type="text" class="campo num2" id="num2" placeholder="Equivale a"
+                    title="Digite o segundo número da Regra de Três." required />
+            </div>
+            <div class="space-between">
+                <input type="text" class="campo num3" id="num3" placeholder="Então"
+                    title="Digite o terceiro número da Regra de Três." required />
+                <input type="text" class="campo res" id="res" placeholder="X"
+                    title="Aqui sairá o resultado da Regra de Três." readonly required>
+            </div>
+            <div class="space-between">
+                <button type="reset">Limpar</button>
+                <button type="button" onclick="awns()">Calcular</button>
+            </div>
+        </form>
     </div>
 
-<script src="script.js"></script>
+
+    <!-- Switch -->
+
+    <div class="entire-switch">
+        <h2>Inversamente Proporcional</h2>
+        <label class="switch">
+            <input type="checkbox" id="check">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 Meus primeiros projetos como prática dos conhecimentos que adquiri no 1º ano do ensino médio no curso de informática para internet (basicamente são calculadoras das fórmulas que eu aprendia nas matérias do ensino médio da época, com exceção do mammamia's (que era um projeto de um site para um time de cs:go que não foi continuado 😅))
 
-[acesse-os pela linda home ai](https://ignition777.github.io/projetos-ensino-medio/)
-créditos pelo design da home: @viniciuschwalensky
+[acesse-os pela linda home ai](https://ignition777.github.io/projetos-ensino-medio/) <br />
+créditos pelo design da home: [@viniciuschwalensky](https://github.com/viniciuschwalensky)
 
 ##  algumas observações
 

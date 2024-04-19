@@ -1,4 +1,4 @@
-#Projetos do meu ensino médio
+# Projetos do meu ensino médio
 *Utilizando Javascript puro*
 
 Meus primeiros projetos como prática dos conhecimentos que adquiri no 1º ano do ensino médio no curso de Informática para Internet

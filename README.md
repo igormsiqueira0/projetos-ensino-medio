@@ -3,7 +3,7 @@
 
 Meus primeiros projetos como prática dos conhecimentos que adquiri no 1º ano do ensino médio no curso de Informática para Internet
 
-Design realizado por: [Vinícius Chwalensky](https://github.com/viniciuschwalensky)
+Design da HOME realizado por: [Vinícius Chwalensky](https://github.com/viniciuschwalensky)
 
 ##  Algumas observações
 
